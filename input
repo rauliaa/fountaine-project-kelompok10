@@ -24,10 +24,9 @@
   <label for="perempuan">perempuan</label><br><br>
 
   <label>Keluhan pasien:</label><br>
-  <input type="checkbox" id="Demam" name="Diabetes" value="Demam">
-  <label for="Demam">Demam</label><br>
-  <input type="checkbox" id="Diabetes" name="Diabetes" value="Diabetes">
-  <label for="Diabetes">Diabetes</label><br><br>
+  <input type="checkbox" id="Demam">Demam
+  <input type="checkbox" id="Diabetes">Diabetes
+  <br><br>
 
   <label>Kategori</label><br>
   <select required>
