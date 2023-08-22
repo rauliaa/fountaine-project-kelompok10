@@ -3,16 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Pasien</title>
+    <title>Data Pasien</title>
     <link rel="stylesheet" href="list.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f5e0;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        color: #0f8036;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        background-color: #0f8036;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    tr {
+        background-color: #0f8036;
+        color: #fff;
+    }
+
+    tr:first-child th {
+        background-color: #000;
+    }
+
+    tr:nth-child(even) {
+        background-color: #0c602b;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #0f8036;
+    }
+</style>
 </head>
 <body>
     <h2>Data Pasien</h2>
     <br>
-    <a href="welcome.html"><button>Registration</button></a>
+    <a href="welcome.html"><button style="background-color: #0f8036; color: #fff; border: none; border-radius: 3px; padding: 10px 20px; cursor: pointer; display: block; margin: 20px auto;">Registration</button></a>
     <br>
-    <table border="1">
-        <tr>
+    <table border="1" style="border-collapse: collapse; width: 80%; margin: 0 auto; border: 1px solid #ccc;">
+        <tr style="background-color: #0f8036; color: #fff;">
+            <th style="padding: 10px; border: 1px solid #ccc; text-align: center;">No</th>
             <th>Nama</th>
             <th>Alamat</th>
             <th>Umur</th>
@@ -22,6 +82,7 @@
             <th>Keluhan Yang Lebih Spesifik</th>
         </tr>
         <tr>
+            <th>1</th>
             <th>Jennie</th>
             <th>Telukjambe, Karawang</th>
             <th>20</th>
@@ -31,6 +92,7 @@
             <th>Sakit kepal, pusing, panas</th>
         </tr>
         <tr>
+            <th>2</th>
             <th>Mulyono</th>
             <th>Kutawaluya, Rengasdengklok</th>
             <th>59</th>
@@ -40,6 +102,7 @@
             <th>Mudah lelah, nyeri pada kaki</th>
         </tr>
         <tr>
+            <th>3</th>
             <th>Raisya</th>
             <th>Kertabumi, Karawang</th>
             <th>12</th>
