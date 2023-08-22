@@ -3,19 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body {
+            background-color: #f0f5e0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+         #login-form {
+            background-color: #e0f0d7;
+            border: 1px solid #c2d0bc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #0f8036;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #0f8036;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #0f8036;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0c602b;
+        }
+
+        button[type="submit"]:focus {
+            outline: none;
+        }
+
+        /* Optional: Tambah style untuk pesan eror */
+        .error-message {
+            color: #c00;
+            margin-top: 5px;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: #f0f5e0; font-family: Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
     <form action="welcome.html" method="post">
-        <h2>Login</h2>
-        <form id="login-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br>
+        <div id="login-form" style="background-color: #e0f0d7; border: 1px solid #c2d0bc; border-radius: 5px; padding: 20px; width: 300px; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);">
+            <h2 style="color: #0f8036; text-align: center; margin-bottom: 20px;">Login</h2>
+            <label for="username" style="display: block; color: #0f8036; margin-top: 10px;">Username:</label>
+            <input type="text" id="username" name="username" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; margin-top: 5px; box-sizing: border-box;" required><br>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br>
+            <label for="password" style="display: block; color: #0f8036; margin-top: 10px;">Password:</label>
+            <input type="password" id="password" name="password" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; margin-top: 5px; box-sizing: border-box;" required><br>
 
-            <button type="submit">Login</button>
-        </form>
+            <button type="submit" style="background-color: #0f8036; color: #fff; border: none; border-radius: 3px; padding: 10px 20px; cursor: pointer; margin-top: 15px; width: 100%;" onmouseover="this.style.backgroundColor='#0c602b';" onmouseout="this.style.backgroundColor='#0f8036';">Login</button>
+        </div>
+    </form>
 </body>
 </html>
