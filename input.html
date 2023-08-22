@@ -17,7 +17,7 @@
   <label for="Umur">Umur:</label><br>
   <input type="number" id="Umur" name="Umur"><br><br>
   
-<label>Gender:</label><br>
+  <label>Gender:</label><br>
   <input type="radio" id="Perempuan" name="gender" value="laki-laki">
   <label for="laki-laki">laki-laki</label><br>
   <input type="radio" id="perempuan" name="gender" value="perempuan">
@@ -40,24 +40,17 @@
 
   <label for="Keluhan yang lebih spesifik">Keluhan yang lebih spesifik:</label><br>
   <textarea id="Keluhan yang lebih spesifik" cols="30" rows="10"></textarea>
-<br>
-
-  </form>
-    <form action="list.html" method="post">
-        <input type="Kirim" value="Kirim">
-    </form>
-    </form>
-    
-    <form action="welcome.html" method="GET">
-        <input type="Batal" value="Batal">
-    </form>
-    
+  
+  <br>
+  <button>Kirim</button>
+</form>
+    <a href="login.html"><button>Batal</button></a>
+    <br>
     <button onclick="resetForm()">Ulang</button>
 <script>
-    function resetForm(){
-        document.getElementById("id-form").reset();
-    }
+  function resetForm(){
+    document.getElementById("id-form").reset();
+  }
 </script>
-</form>
 </body>
 </html>
