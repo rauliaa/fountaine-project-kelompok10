@@ -1,43 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Create a New Account</title>
+  <title>Input Data</title>
+  <link rel="stylesheet" href="input.css">
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f5e0;
+      margin: 0;
+      padding: 0;
+  }
+
+  h2 {
+      color: #0f8036;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  form {
+      background-color: #e0f0d7;
+      border: 1px solid #c2d0bc;
+      border-radius: 5px;
+      padding: 20px;
+      width: 300px;
+      margin: 0 auto;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  label {
+      color: #0f8036;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-top: 5px;
+      box-sizing: border-box;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+      margin-right: 5px;
+  }
+
+  select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-top: 5px;
+      box-sizing: border-box;
+  }
+
+  button {
+      background-color: #0f8036;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 15px;
+      display: inline-block;
+  }
+
+  a button {
+      background-color: #0c602b;
+  }
+
+  button:hover {
+      background-color: #0c602b;
+  }
+</style>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; background-color: #f0f5e0; margin: 0; padding: 0;">
 
-<h2>Data Pendaftaran pasien rumah sakit</h2>
+<h2 style="color: #0f8036; text-align: center; margin-top: 20px;">Data Pendaftaran pasien rumah sakit</h2>
 
-<form action="list.html" method="post" id="id-form">
-  <label for="Nama lengkap">Nama lengkap:</label><br>
-  <input type="text" id="Nama lengkap" name="Nama lengkap"><br><br>
+<form action="list.html" method="post" id="id-form" style="background-color: #e0f0d7; border: 1px solid #c2d0bc; border-radius: 5px; padding: 20px; width: 300px; margin: 0 auto; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);">
+  <label for="Nama lengkap" style="color: #0f8036;">Nama Lengkap:</label><br>
+  <input type="text" id="Nama lengkap" name="Nama lengkap" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; margin-top: 5px; box-sizing: border-box;"><br><br>
 
   <label for="Alamat">Alamat:</label><br>
   <input type="text" id="Alamat" name="Alamat"><br><br>
 
   <label for="Umur">Umur:</label><br>
   <input type="number" id="Umur" name="Umur"><br><br>
-  
-  <label>Gender:</label><br>
+
+  <label style="color: #0f8036;">Gender:</label><br>
   <input type="radio" id="Perempuan" name="gender" value="laki-laki">
   <label for="laki-laki">Laki-laki</label><br>
   <input type="radio" id="perempuan" name="gender" value="perempuan">
   <label for="perempuan">Perempuan</label><br><br>
 
-  <label>Keluhan pasien:</label><br>
+  <label style="color: #0f8036;">Keluhan pasien:</label><br>
   <input type="checkbox" id="Demam">Demam
   <input type="checkbox" id="Diabetes">Diabetes
   <br><br>
 
-  <label>Kategori</label><br>
-  <select required>
-  <option value="Anak-anak">Anak-anak</option>
-  <option value="Dewasa">Dewasa</option>
-  <option value="Lansia">Lansia</option>
+  <label style="color: #0f8036;">Kategori</label><br>
+  <select required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; margin-top: 5px; box-sizing: border-box;">
+    <option value="Anak-anak">Anak-anak</option>
+    <option value="Dewasa">Dewasa</option>
+    <option value="Lansia">Lansia</option>
   </select>
 
   <br><br>
 
-  <label for="Keluhan yang lebih spesifik">Keluhan yang lebih spesifik:</label><br>
+
+  <label for="Keluhan yang lebih spesifik" style="color: #0f8036;">Keluhan yang lebih spesifik:</label><br>
   <textarea id="Keluhan yang lebih spesifik" cols="30" rows="10"></textarea>
   <br>
   <div class="button-container">
