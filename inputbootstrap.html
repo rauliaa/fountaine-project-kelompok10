@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create a New Account</title>
+  <link rel="stylesheet" href="input.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<body>
+
+<h2>Data Pendaftaran pasien rumah sakit</h2>
+
+<form action="list.html" method="post" id="id-form">
+  <label for="Nama lengkap">Nama lengkap:</label><br>
+  <input type="text" id="Nama lengkap" name="Nama lengkap"><br><br>
+
+  <label for="Alamat">Alamat:</label><br>
+  <input type="text" id="Alamat" name="Alamat"><br><br>
+
+  <label for="Umur">Umur:</label><br>
+  <input type="number" id="Umur" name="Umur"><br><br>
+  
+  <label>Gender:</label><br>
+  <input type="radio" id="Perempuan" name="gender" value="laki-laki">
+  <label for="laki-laki">Laki-laki</label><br>
+  <input type="radio" id="perempuan" name="gender" value="perempuan">
+  <label for="perempuan">Perempuan</label><br><br>
+
+  <label>Keluhan pasien:</label><br>
+  <input type="checkbox" id="Demam">Demam
+  <input type="checkbox" id="Diabetes">Diabetes
+  <br><br>
+
+  <label>Kategori</label><br>
+  <select required>
+    <option value="Anak-anak">Anak-anak</option>
+    <option value="Dewasa">Dewasa</option>
+    <option value="Lansia">Lansia</option>
+  </select>
+
+  <br><br>
+
+  <label for="Keluhan yang lebih spesifik" style="color: #0f8036;">Keluhan yang lebih spesifik:</label><br>
+  <textarea id="Keluhan yang lebih spesifik" cols="30" rows="10"></textarea>
+  <br>
+  <div class="button-container">
+    <button>Kirim</button>
+    <button type="reset">Ulang</button> 
+    <a href="index.html">
+      <button type="button">Batal</button>
+    </a>
+  </div>
+</form>
+</body>
+</html>
